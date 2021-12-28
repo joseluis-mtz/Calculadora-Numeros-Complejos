@@ -86,6 +86,7 @@
             this.btnSubtract.TabIndex = 63;
             this.btnSubtract.Text = "Restar";
             this.btnSubtract.UseVisualStyleBackColor = false;
+            this.btnSubtract.Click += new System.EventHandler(this.btnSubtract_Click);
             // 
             // btnAdd
             // 
