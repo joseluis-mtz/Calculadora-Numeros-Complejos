@@ -74,6 +74,7 @@
             this.btnMultiply.TabIndex = 64;
             this.btnMultiply.Text = "Multiplicar";
             this.btnMultiply.UseVisualStyleBackColor = false;
+            this.btnMultiply.Click += new System.EventHandler(this.btnMultiply_Click);
             // 
             // btnSubtract
             // 
