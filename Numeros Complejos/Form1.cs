@@ -119,5 +119,27 @@ namespace Numeros_Complejos
 
             }
         }
+
+        private void btnDivide_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (VerificaOp())
+                {
+                    double nuRe1 = double.Parse(txtRe1.Text);
+                    double nuRe2 = double.Parse(txtRe2.Text);
+                    double nuImg1 = double.Parse(txtIm1.Text);
+                    double nuImg2 = double.Parse(txtIm2.Text);
+                    Complex num1 = new Complex(nuRe1, nuImg1);
+                    Complex num2 = new Complex(nuRe2, nuImg2);
+                    Complex resultado = Complex.Divide(num1, num2);
+                    lblResOp.Text = "Resultado: " + resultado.Real.ToString("0.####") + ", " + resultado.Imaginary.ToString("0.####") + "i";
+                }
+            }
+            catch (Exception)
+            {
+
+            }
+        }
     }
 }
