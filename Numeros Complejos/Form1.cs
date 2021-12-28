@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Numerics;
 
 namespace Numeros_Complejos
 {
@@ -27,6 +28,29 @@ namespace Numeros_Complejos
             {
                 MessageBox.Show("Completa los campos primero.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
+            }
+        }
+
+        private void tbnPow_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtReal.Text.Length > 0 && txtImg.Text.Length > 0 && txtN.Text.Length > 0)
+                {
+                    double ptReal = double.Parse(txtReal.Text);
+                    double ptImg = double.Parse(txtImg.Text);
+                    int potencia = int.Parse(txtN.Text);
+                    Complex num1 = new Complex(ptReal, ptImg);
+                    Complex resultado = Complex.Pow(num1, potencia);
+                    lblResPow.Text = "Resultado: " + resultado.Real.ToString("0.####") + ", " + resultado.Imaginary.ToString("0.####") + "i";
+                }
+                else
+                {
+                    MessageBox.Show("Completa los campos primero.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception)
+            {
             }
         }
     }

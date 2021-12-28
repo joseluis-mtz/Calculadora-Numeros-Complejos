@@ -193,6 +193,7 @@
             this.tbnPow.TabIndex = 52;
             this.tbnPow.Text = "Elevar";
             this.tbnPow.UseVisualStyleBackColor = false;
+            this.tbnPow.Click += new System.EventHandler(this.tbnPow_Click);
             // 
             // txtN
             // 
