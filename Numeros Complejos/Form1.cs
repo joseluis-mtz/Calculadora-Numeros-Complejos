@@ -141,5 +141,47 @@ namespace Numeros_Complejos
 
             }
         }
+
+        private void txtReal_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Libreria_validacion.Validar.SoloNumerosDecimales(e);
+            Libreria_validacion.Validar.PresionarEnter(e);
+        }
+
+        private void txtImg_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Libreria_validacion.Validar.SoloNumerosDecimales(e);
+            Libreria_validacion.Validar.PresionarEnter(e);
+        }
+
+        private void txtN_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Libreria_validacion.Validar.SoloNumeros(e);
+            Libreria_validacion.Validar.PresionarEnterBoton(e, tbnPow);
+        }
+
+        private void txtRe1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Libreria_validacion.Validar.SoloNumerosDecimales(e);
+            Libreria_validacion.Validar.PresionarEnter(e);
+        }
+
+        private void txtIm1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Libreria_validacion.Validar.SoloNumerosDecimales(e);
+            Libreria_validacion.Validar.PresionarEnter(e);
+        }
+
+        private void txtRe2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Libreria_validacion.Validar.SoloNumerosDecimales(e);
+            Libreria_validacion.Validar.PresionarEnter(e);
+        }
+
+        private void txtIm2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Libreria_validacion.Validar.SoloNumerosDecimales(e);
+            Libreria_validacion.Validar.PresionarEnter(e);
+        }
     }
 }

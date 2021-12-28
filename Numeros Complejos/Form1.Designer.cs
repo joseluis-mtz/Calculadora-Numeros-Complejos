@@ -110,6 +110,7 @@
             this.txtIm2.Name = "txtIm2";
             this.txtIm2.Size = new System.Drawing.Size(134, 26);
             this.txtIm2.TabIndex = 61;
+            this.txtIm2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIm2_KeyPress);
             // 
             // txtRe2
             // 
@@ -118,6 +119,7 @@
             this.txtRe2.Name = "txtRe2";
             this.txtRe2.Size = new System.Drawing.Size(100, 26);
             this.txtRe2.TabIndex = 60;
+            this.txtRe2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtRe2_KeyPress);
             // 
             // lblResOp
             // 
@@ -157,6 +159,7 @@
             this.txtIm1.Name = "txtIm1";
             this.txtIm1.Size = new System.Drawing.Size(134, 26);
             this.txtIm1.TabIndex = 56;
+            this.txtIm1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIm1_KeyPress);
             // 
             // txtRe1
             // 
@@ -165,6 +168,7 @@
             this.txtRe1.Name = "txtRe1";
             this.txtRe1.Size = new System.Drawing.Size(100, 26);
             this.txtRe1.TabIndex = 55;
+            this.txtRe1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtRe1_KeyPress);
             // 
             // label7
             // 
@@ -206,6 +210,7 @@
             this.txtN.Name = "txtN";
             this.txtN.Size = new System.Drawing.Size(100, 26);
             this.txtN.TabIndex = 51;
+            this.txtN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtN_KeyPress);
             // 
             // txtImg
             // 
@@ -214,6 +219,7 @@
             this.txtImg.Name = "txtImg";
             this.txtImg.Size = new System.Drawing.Size(100, 26);
             this.txtImg.TabIndex = 50;
+            this.txtImg.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtImg_KeyPress);
             // 
             // txtReal
             // 
@@ -222,6 +228,7 @@
             this.txtReal.Name = "txtReal";
             this.txtReal.Size = new System.Drawing.Size(100, 26);
             this.txtReal.TabIndex = 49;
+            this.txtReal.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtReal_KeyPress);
             // 
             // lblResPow
             // 
