@@ -16,5 +16,18 @@ namespace Numeros_Complejos
         {
             InitializeComponent();
         }
+
+        public bool VerificaOp()
+        {
+            if (txtRe1.Text.Length > 0 && txtRe2.Text.Length > 0 && txtIm1.Text.Length > 0 && txtIm2.Text.Length > 0)
+            {
+                return true;
+            }
+            else
+            {
+                MessageBox.Show("Completa los campos primero.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+        }
     }
 }
