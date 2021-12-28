@@ -98,6 +98,7 @@
             this.btnAdd.TabIndex = 62;
             this.btnAdd.Text = "Sumar";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // txtIm2
             // 
